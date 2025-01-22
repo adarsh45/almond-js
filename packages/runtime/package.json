@@ -1,0 +1,25 @@
+{
+  "name": "almond",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/almond.js",
+  "type": "module",
+  "files": [
+    "dist/almond.js"
+  ],
+  "scripts": {
+    "prepack": "npm run build",
+    "build": "rollup -c",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "keywords": [],
+  "author": "Adarsh",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.18.0",
+    "rollup": "^4.31.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-filesize": "^10.0.0"
+  }
+}

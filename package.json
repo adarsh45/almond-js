@@ -1,0 +1,17 @@
+{
+  "name": "almond-project",
+  "version": "1.0.0",
+  "description": "A project built by Adarsh to learn how frameworks are built",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/runtime"
+  ],
+  "scripts": {
+    "serve:examples": "npx http-server . -o ./examples/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Adarsh",
+  "license": "ISC"
+}
