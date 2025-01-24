@@ -15,3 +15,11 @@ function addEventListener(eventName, handler, el) {
   el.addEventListener(eventName, handler);
   return handler;
 }
+
+export function removeEventListeners(listeners, el) {
+  const listenersEntries = Object.entries(listeners);
+
+  for (const [eventName, handler] of listenersEntries) {
+    el.removeEventListener(eventName, handler);
+  }
+}
